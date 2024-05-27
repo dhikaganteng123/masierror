@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagnosis Gizi Buruk Pada Balita</title>
+    <link rel="stylesheet" href="/css/form.css" />
+    <link rel="stylesheet" href="/css/result.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Diagnosis Gizi Buruk Pada Balita</a>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1>Mari Kita Coba!!!</h1>
+    <form id="diagnosisForm" action="/result" method="post">
+      <h2>Gejala:</h2>
+      <div>
+        <input
+          type="checkbox"
+          id="tubuh_kurus"
+          name="G01_P01"
+          value="tubuh_kurus"
+        />
+        <label for="tubuh_kurus">Tubuh Kurus</label>
+        <select id="tubuh_kurus_select" name="PG1">
+          <option value="P01">Sangat Tidak</option>
+          <option value="P02">Tidak</option>
+          <option value="P03">Sedikit</option>
+          <option value="P04">Terlihat Kurus</option>
+          <option value="P05">Sangat Terlihat Kurus</option>
+        </select>
+      </div>
+      <div>
+        <input type="checkbox" id="lemas" name="G02_P01" value="lemas" />
+        <label for="lemas">Lemas</label>
+        <select id="lemas_select" name="PG2">
+          <option value="P01">Berenergi</option>
+          <option value="P02">Agak Berenergi</option>
+          <option value="P03">Kurang Berenergi</option>
+          <option value="P04">Tidak Berenergi</option>
+          <option value="P05">Sangat Tidak Berenergi</option>
+        </select>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="berat_badan_turun"
+          name="G03_P01"
+          value="berat_badan_turun"
+        />
+        <label for="berat_badan_turun">Berat Badan Turun</label>
+        <select id="berat_badan_turun_select" name="PG3">
+          <option value="P01">Tidak</option>
+          <option value="P02">Sedikit</option>
+          <option value="P03">Cukup</option>
+          <option value="P04">Banyak</option>
+        </select>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="terlihat_kurus"
+          name="G04_P01"
+          value="terlihat_kurus"
+        />
+        <label for="terlihat_kurus">Terlihat Kurus</label>
+        <select id="terlihat_kurus_select" name="PG4">
+          <option value="P01">Jarang</option>
+          <option value="P02">Kadang</option>
+          <option value="P03">Sering</option>
+          <option value="P04">Selalu</option>
+        </select>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="kulit_kering"
+          name="G05_P01"
+          value="kulit_kering"
+        />
+        <label for="kulit_kering">Kulit Kering</label>
+        <select id="kulit_kering_select" name="PG5">
+          <option value="P01">Tidak</option>
+          <option value="P02">Agak</option>
+          <option value="P03">Kering</option>
+          <option value="P04">Sangat Kering</option>
+        </select>
+      </div>
+
+      <br />
+      <button type="submit">Diagnosa</button>
+    </form>
+
+    <div id="diagnosisResult"></div>
+    <div id="cfResult"></div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

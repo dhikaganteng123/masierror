@@ -1,0 +1,49 @@
+#result {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#result h2 {
+  color: #343a40;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#result p {
+  color: #6c757d;
+  font-size: 18px;
+}
+
+#result .diagnosis {
+  font-weight: bold;
+  color: #dc3545;
+}
+
+#result .cf {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+#result .description {
+  margin-top: 20px;
+  color: #495057;
+}
+
+@media screen and (max-width: 768px) {
+  #result {
+    padding: 15px;
+  }
+
+  #result h2 {
+    font-size: 20px;
+  }
+
+  #result p {
+    font-size: 16px;
+  }
+}
